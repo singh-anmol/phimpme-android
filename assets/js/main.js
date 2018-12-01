@@ -1,3 +1,5 @@
+---
+---
 (function($) {
     "use strict";
 
@@ -32,7 +34,7 @@
                 nav: true,
                 autoplayHoverPause: true,
                 touchDrag: true,
-                navText: ["<img src='/assets/img/chevron-left.svg' style='width:13px;margin-top:-5px;'>", "<img src='/assets/img/chevron-right.svg' style='width:13px;margin-top:-5px;'>"],
+                navText: ["<img src='{{relative}}assets/img/chevron-left.svg' style='width:13px;margin-top:-5px;'>", "<img src='{{relative}}assets/img/chevron-right.svg' style='width:13px;margin-top:-5px;'>"],
                 responsiveClass: true,
                 responsive: {
                     0: {
@@ -56,7 +58,7 @@
 
         /*====  Reviews slide =====*/
         if ($.fn.owlCarousel) {
-            $('.review-slide, .blog-slide').owlCarousel({
+            $('.review-slide, .page-slide').owlCarousel({
                 items: 3,
                 loop: true,
                 nav: false,
