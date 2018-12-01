@@ -1,0 +1,51 @@
+{% capture lvl %}{{ page.url | append:'index.html' | split:'/' | size }}{% endcapture %}
+{% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
+    <div class="about-area" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="section-title z-index1 wow fadeInUp">
+                        <h2>About The App</h2>
+                        <p>{{site.name}} is a Photo App for Android that aims to replace proprietary photo <br>
+						applications. It offers features such as taking photos, adding filters, <br>
+						editing images and uploading them to social networks.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="about-single-item">
+                        <div class="about-single-icon cta">
+                            <span style="background: url({{relative}}/assets/img/icon_capture.png);"></span>
+                        </div>
+                        <div class="about-single-content">
+                            <h4>Capture</h4>
+                            <p>Click beautiful images using the Phimp.me mobile app. Use various advanced scene modes and variety of balance modes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="about-single-item">
+                        <div class="about-single-icon cta">
+                            <span style="background: url({{relative}}/assets/img/icon_edit.png);"></span>
+                        </div>
+                        <div class="about-single-content">
+                            <h4>Edit</h4>
+                            <p>Amazing photos. Anywhere you are. {{ site.name }} gives you everything you need to edit, organise, store and share your photos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="about-single-item">
+                        <div class="about-single-icon cta">
+                            <span style="background: url({{relative}}/assets/img/icon_share.png);"></span>
+                        </div>
+                        <div class="about-single-content">
+                            <h4>Share</h4>
+                            <p>Facebook, Twitter, Imgur, Dropbox, Box, Flickr, Pinterest, Instagram, Whatsapp, and Tumblr - You name it and we have it covered.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

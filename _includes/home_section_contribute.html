@@ -1,0 +1,39 @@
+{% capture lvl %}{{ page.url | append:'index.html' | split:'/' | size }}{% endcapture %}
+{% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
+    <div class="contribute-area" id="contribute">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="section-title ctas1">
+                        <h2>Want to contribute?</h2>
+						<p style="max-width:750px;margin:auto">This is an Open Source project developed by FOSSASIA and we would be happy to see contributors who report bugs and file feature requests by submitting pull requests as well.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row section-fossasia">
+                <div class="col-md-6 offset-lg-1 wow fadeInLeft d-md-block" style="display:none">
+                    <div class="about-fossasia">
+						<h2>About FOSSASIA</h2>
+                        <p>FOSSASIA</a> develops Open Source software and hardware solutions with a global developer community from its base in Asia and organizes Open Technology events around the year. The organization also runs coding programs and development contests.</p>
+						<a href="https://fossasia.org" class="fossasia-link-btn" target="_blank">Visit fossasia.org</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInRight">
+                    <div class="contribute-form-right">
+                        <div class="contribute-form-right-single">
+							<h5>Contribute to Development</h5>
+                            <a class="github-button" href="https://github.com/fossasia/phimpme-android" data-size="large" aria-label="View fossasia/phimpme-android on GitHub">&nbsp;View Project on GitHub</a>
+                        </div>
+                        <div class="contribute-form-right-single">
+							<h5>Star this project on GitHub</h5>
+                            <a class="github-button" href="https://github.com/fossasia/phimpme-android" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star fossasia/phimpme-android on GitHub">&nbsp;Star {{site.name}}</a>
+                        </div>
+                        <div class="contribute-form-right-single">
+							<h5>Request Features / Report Bugs</h5>
+                            <a class="github-button" href="https://github.com/fossasia/phimpme-android/issues" data-size="large" aria-label="Issue fossasia/phimpme-android on GitHub">&nbsp;Open an Issue on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

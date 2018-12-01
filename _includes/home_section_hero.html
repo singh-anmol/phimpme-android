@@ -1,0 +1,23 @@
+{% capture lvl %}{{ page.url | append:'index.html' | split:'/' | size }}{% endcapture %}
+{% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
+    <div class="main-hero-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="{{ relative }}/assets/img/home-hero-mobile-img.png" class="d-block d-sm-none">
+                    <div class="hero-txt">
+                        <h1>All-in-one Camera App<br class="d-block">Capture, Edit and Share</h1>
+                        <p>With {{site.name}} &mdash; take photos, view gallery, add filters, edit images and upload them to social networks.</p>
+                        <a class="download-playstore" href="{{site.playstore_url}}"></a>
+                        <a class="download-fdroid" href="{{ site.fdroid_url }}"></a>
+                        <a href="javascript:void()" class="download-qr d-none d-sm-inline-block" data-toggle="modal" data-target="#qrCodeModal"></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="homepage-hero-mobile wow fadeInDown">
+                        <img src="{{ relative }}/assets/img/home-hero-mobile-img.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

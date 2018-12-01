@@ -1,0 +1,24 @@
+{% capture lvl %}{{ page.url | append:'index.html' | split:'/' | size }}{% endcapture %}
+{% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
+    <div class="download-area" id="download">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 wow fadeInLeft">
+                    <div class="download-area-left">
+                        <h1>Get The App Now</h1>
+                        <p>Do you have many different apps on your Android Phone for the purpose of clicking, editing and sharing images? Hey, guess what, now you don't need all of those because {{site.name}} is here, with all the features packaged into one. So go and clean your phone memory to save your space for other useful purposes.</p>
+                        <div class="download-mobile-app">
+                            <a href="{{ site.playstore_url }}" class="download-playstore-alt"></a>
+                            <a href="{{ site.fdroid_url }}" class="download-fdroid-alt"></a>
+                            <a href="javascript:void()" class="download-qr-alt d-none d-sm-inline-block" data-toggle="modal" data-target="#qrCodeModal"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 wow fadeInRight">
+                    <div class="download-app-right">
+                        <img src="{{relative}}/assets/img/get-app-mobile.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

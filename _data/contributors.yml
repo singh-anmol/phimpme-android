@@ -1,0 +1,14 @@
+# SYNTAX FOR ADDING NEW CONTRIBUTORS
+# - name : Name of the screenshot file `somefile.ext`, must be located in `screenshots` directory
+#   github_avatar : GitHub's avatar url
+#   role : Developer / Maintainer
+#   facebook : Facebook profile url
+#   twitter : Twitter profile url
+#   linkedin : Linkedin profile url
+
+- name : Some Name
+  github_avatar : url
+  role : Developer
+  facebook : url
+  twitter : url
+  linkedin : url

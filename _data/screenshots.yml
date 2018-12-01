@@ -1,0 +1,21 @@
+# SYNTAX FOR ADDING NEW SCREENSHOTS
+# - file : Name of the screenshot file `somefile.ext`, must be located in `screenshots` directory
+#   alt : Alt text for the image
+
+- file : screenshot1.png
+  alt : null
+
+- file : screenshot2.jpg
+  alt : null
+
+- file : screenshot3.jpg
+  alt : null
+
+- file : screenshot4.jpg
+  alt : null
+
+- file : screenshot5.jpg
+  alt : null
+
+- file : screenshot6.jpg
+  alt : null

@@ -1,0 +1,25 @@
+{% capture lvl %}{{ page.url | append:'index.html' | split:'/' | size }}{% endcapture %}
+{% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
+    <div class="screenshot-area" id="screenshots">
+        <div class="container">
+            <div class="row mb50">
+                <div class="col-md-12 wow fadeInUp text-center">
+                    <div class="section-title">
+                        <h2>Screenshots</h2>
+                        <p>Want to experience the {{ site.name }} app before downloading?
+						<br>No worries, checkout our screenshot showcase below</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="screenshot-slide">
+                        {% for screenshot in site.data.screenshots %}<div class="screenshot-single-slide">
+                            <img src="{{relative}}/screenshots/{{ screenshot.file }}" alt="{{ screenshot.alt }}">
+                        </div>
+						{% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,23 @@
+# Site Config
+name : "Phimp.me"
+url : "/"
+
+playstore_url : "https://play.google.com/store/apps/details?id=org.fossasia.phimpme"
+fdroid_url : "javascript:alert('App will be released soon on F-droid :)');"
+github_repo_url : "https://github.com/fossasia/phimpme-android"
+donate_url : "https://fossasia.org/donate/"
+contact_url : "http://fossasia.org/contact/"
+
+# Social Profiles
+facebook: "https://www.facebook.com/fossasia/"
+twitter: "https://twitter.com/fossasia"
+instagram: "https://www.instagram.com/fossasia/"
+linkedin: "https://in.linkedin.com/company/fossasia"
+github: "https://github.com/fossasia/phimpme-android"
+googleplus: "https://plus.google.com/+FOSSASIAorg"
+
+# HTML/CSS/JS minification
+compress_html:
+  clippings: all
+  ignore:
+    envs: development

@@ -1,0 +1,83 @@
+{% capture lvl %}{{ page.url | append:'index.html' | split:'/' | size }}{% endcapture %}
+{% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
+    <div class="footer-area wow fadeInUp">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="footer-menu">
+                        <ul id="footer-list">
+							{% for navigation in site.data.header_menu %}<li><a href="{{ navigation.link }}">{{ navigation.text }}</a></li>
+							{% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="footer-social-icon">
+                        <a href="{{ site.facebook }}"><img src="{{relative}}/assets/img/icon-facebook.svg" class="svg"></i></a>
+                        <a href="{{ site.twitter }}"><img src="{{relative}}/assets/img/icon-twitter.svg" class="svg"></i></a>
+                        <a href="{{ site.linkedin }}"><img src="{{relative}}/assets/img/icon-linkedin.svg" class="svg"></i></a>
+                        <a href="{{ site.instagram }}"><img src="{{relative}}/assets/img/icon-instagram.svg" class="svg"></i></a>
+                        <a href="{{ site.googleplus }}"><img src="{{relative}}/assets/img/icon-googleplus.svg" class="svg"></i></a>
+                        <a href="{{ site.github }}"><img src="{{relative}}/assets/img/icon-github.svg" class="svg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="footer-logo">
+                        <h4><a href="{{ site.url }}">{{ site.name }}</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="footer-title">
+                        <p>&copy; 2018 <a href="https://fossasia.org" title="Visit FOSSASIA's website">FOSSASIA</a>.
+						All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<!-- App QR Download Modal -->
+	<div class="modal fade" id="qrCodeModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Scan to Download</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+					    <div class="col-sm-6" style="border-right:1px solid #dcdcdc">
+						    <div class="center">
+							    &nbsp;<span class="badge badge-secondary qr-badge-title">Google Play Store</span>
+								<br class="d-block">
+						        <img src="{{relative}}/assets/img/qrcode-playstore.png" width="200" style="margin:10px 0 20px 0">
+								<br class="d-block">
+							</div>
+					    </div>
+					    <div class="col-sm-6">
+						    <div class="center">
+							    &nbsp;<span class="badge badge-secondary qr-badge-title">F-Droid</span>
+								<br class="d-block">
+						        <img src="{{relative}}/assets/img/qrcode-fdroid.png" width="200" style="margin:10px 0 20px 0">
+								<br class="d-block">
+							</div>
+					    </div>
+					</div>
+                    
+                </div>
+            </div>
+        </div>
+	</div>
+
+    <script src="{{relative}}/assets/js/bundle.js"></script>
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+</html>

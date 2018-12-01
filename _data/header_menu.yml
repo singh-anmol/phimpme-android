@@ -1,0 +1,28 @@
+# SYNTAX FOR ADDING NEW HEADER MENU ITEM
+# - text : write menu's title here
+#   link : paste absolute / relative / inline link url here
+#   text : `simple` for a text link, `call-to-action` for a button
+
+- text : About
+  link : "#about"
+  type : simple
+
+- text : Features
+  link : "#features"
+  type : simple
+
+- text : Screenshots
+  link : "#screenshots"
+  type : simple
+  
+- text : Contribute
+  link : "#contribute"
+  type : simple
+
+- text : Contact
+  link : https://fossasia.org/contact/
+  type : simple
+  
+- text : Donate
+  link : https://fossasia.org/donate/
+  type : call-to-action
